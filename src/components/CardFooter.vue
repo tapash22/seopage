@@ -23,7 +23,7 @@ import UploadImage from './UploadImage.vue';
 
 export default {
     name: 'card-footer',
-    props: ['images', 'likes', 'comments', 'card'],
+    props: ['images', 'likes', 'count', 'card'],
 
     components: {
         CardFooterTag,

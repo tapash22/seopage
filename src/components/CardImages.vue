@@ -9,7 +9,7 @@
 <script>
 export default {
     name: 'card-images',
-    props: ['images']
+    props: ['images'],
 }
 </script>
 

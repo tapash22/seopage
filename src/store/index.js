@@ -270,7 +270,21 @@ export default new Vuex.Store({
       return state.filecounts.length;
     }
   },
-  mutations: {},
-  actions: {},
+  mutations: {
+    UPLOAD_IMAGE(state,payload){
+      let file = payload;
+      if(file.length>1){
+        state.filecounts += file;
+      }
+      state.filecounts.push(file);
+
+    }
+  },
+  actions: {
+      uploadFile({commit},image){
+      commit('UPLOAD_IMAGE',image);
+      
+    }
+  },
   modules: {},
 });

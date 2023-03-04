@@ -13,7 +13,7 @@
             <v-card-title>Selected file</v-card-title>
             <v-card-text>
                 <form method="post">
-                    <input name="file" type="file" placeholder="enter file" multiple style="border:1px solid black;padding:5px; width:250px;height:40px;border-radious:50px;" />
+                    <input name="file" type="file" placeholder="enter file" multiple style="" />
                     <v-btn @click="uploadFile" color="red" class="my-2">
                         upload
                     </v-btn>
@@ -31,10 +31,10 @@ import { mapGetters } from 'vuex';
 
 export default {
     name: 'upload-image',
-    props: [],
     data() {
         return {
             dialog: false,
+            images:[]
         }
     },
     computed:{
@@ -46,9 +46,21 @@ export default {
             console.log('click ')
         },
         uploadFile() {
-            console.log('file upload');
+           this.$store.dispatch('uploadFile',this.images)
+           this.dialog = false;
         }
     }
 
 }
 </script>
+
+<style scoped>
+input{
+    border:1px solid black;
+    border-radius: 5px;
+    padding:5px; 
+    width:250px;
+    height:40px;
+    
+}
+</style>
