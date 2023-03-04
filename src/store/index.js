@@ -12,18 +12,18 @@ export default new Vuex.Store({
         count: 0,
       },
       groupHeader2: {
-        name: "Incomplete",
+        name: "yellow",
         color: "yellow",
         count: 0,
       },
       groupHeader3: {
         name: "orange",
-        color: "red",
+        color: "orange",
         count: 0,
       },
       groupHeader4: {
         name: "green",
-        color: "red",
+        color: "green",
         count: 0,
       },
       filecounts: [
