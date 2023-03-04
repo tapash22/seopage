@@ -1,14 +1,15 @@
 <template>
 <div class="card-footer-tag">
-    <v-icon size="14">mdi-facebook</v-icon>
-    <span class="text-caption">12</span>
+  
+    <v-icon size="14">{{icon}}</v-icon>
+    <span class="text-caption">{{count}}</span>
 </div>
 </template>
 
 <script>
 export default {
     name:'card-footer-tag',
-    props:[]
+    props:['icon','count']
 }
 </script>
 

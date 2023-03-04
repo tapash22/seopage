@@ -1,15 +1,15 @@
 <template>
-<div class="header">
-    <v-sheet class="d-flex pa-2 " color="transparent">
-        <v-icon>
+<div class="top">
+    <v-sheet class="d-flex pa-2 sheet" color="transparent">
+        <v-icon :color="color">
             mdi-circle-half
         </v-icon>
         <h2 class="text-body-1 font-weight-bold">
-            Incomplete
+          {{name}}
         </h2>
         <v-spacer></v-spacer>
-        <span style="background:rgba(128, 128, 128, 0.199); width:20px;display:flex;justify-content:center;">
-            0
+        <span>
+          {{count}}
         </span>
     </v-sheet>
 </div>
@@ -17,7 +17,19 @@
 
 <script>
 export default {
-    name:'header',
-    props:[]
+    name: 'top',
+    props: ['name','color','count']
 }
 </script>
+
+<style scoped>
+.sheet{
+    position: static;
+}
+span {
+    background: rgba(128, 128, 128, 0.199);
+    width: 20px;
+    display: flex;
+    justify-content: center;
+}
+</style>

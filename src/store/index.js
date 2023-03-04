@@ -1,11 +1,42 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from "vue";
+import Vuex from "vuex";
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state(){
-    return{
+  state() {
+    return {
+      groupHeader1: {
+        name: "Incomplete",
+        color: "red",
+        count: 0,
+      },
+      groupHeader2: {
+        name: "Incomplete",
+        color: "yellow",
+        count: 0,
+      },
+      groupHeader3: {
+        name: "orange",
+        color: "red",
+        count: 0,
+      },
+      groupHeader4: {
+        name: "green",
+        color: "red",
+        count: 0,
+      },
+      filecounts: [
+        {
+          id: 1,
+          image:'https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png'
+        },
+        {
+          id: 2,
+          image:'https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png'
+        },
+      ],
+
       cards: [
         {
           id: 1,
@@ -17,39 +48,23 @@ export default new Vuex.Store({
                 "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
             },
             {
-              id: 1,
+              id: 2,
               name: "client name",
               cimage:
                 "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
             },
           ],
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
+          text: "Lorem ipsum dolor sit amet consectetur ...",
+          count:'1/2',
           listImage: [
-            "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
-            "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
+           "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
             "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
           ],
           like: 12,
-          commont: [
-            {
-              id: 1,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-            {
-              id: 2,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-            {
-              id: 3,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-            {
-              id: 4,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-          ],
-          fileCount: 25,
-          date: new Date(),
+          count1:new Date().toLocaleDateString(),
+          icon1:'mdi-calendar-month',
+          count2:10,
+          icon2:'mdi-chat-plus-outline', 
         },
         {
           id: 2,
@@ -61,39 +76,23 @@ export default new Vuex.Store({
                 "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
             },
             {
-              id: 1,
+              id: 2,
               name: "client name",
               cimage:
                 "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
             },
           ],
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
+          text: "Lorem ipsum dolor sit amet consectetur ...",
+          count:'1/2',
           listImage: [
-            "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
-            "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
+           "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
             "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
           ],
           like: 12,
-          commont: [
-            {
-              id: 1,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-            {
-              id: 2,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-            {
-              id: 3,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-            {
-              id: 4,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-          ],
-          fileCount: 25,
-          date: new Date(),
+          count1:new Date().toLocaleDateString(),
+          icon1:'mdi-calendar-month',
+          count2:10,
+          icon2:'mdi-chat-plus-outline', 
         },
         {
           id: 3,
@@ -105,39 +104,23 @@ export default new Vuex.Store({
                 "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
             },
             {
-              id: 1,
+              id: 2,
               name: "client name",
               cimage:
                 "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
             },
           ],
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
+          text: "Lorem ipsum dolor sit amet consectetur ...",
+          count:'1/2',
           listImage: [
-            "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
-            "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
+           "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
             "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
           ],
           like: 12,
-          commont: [
-            {
-              id: 1,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-            {
-              id: 2,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-            {
-              id: 3,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-            {
-              id: 4,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-          ],
-          fileCount: 25,
-          date: new Date(),
+          count1:new Date().toLocaleDateString(),
+          icon1:'mdi-calendar-month',
+          count2:10,
+          icon2:'mdi-chat-plus-outline', 
         },
         {
           id: 4,
@@ -149,39 +132,23 @@ export default new Vuex.Store({
                 "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
             },
             {
-              id: 1,
+              id: 2,
               name: "client name",
               cimage:
                 "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
             },
           ],
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
+          text: "Lorem ipsum dolor sit amet consectetur ...",
+          count:'1/2',
           listImage: [
-            "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
-            "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
+           "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
             "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
           ],
           like: 12,
-          commont: [
-            {
-              id: 1,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-            {
-              id: 2,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-            {
-              id: 3,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-            {
-              id: 4,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-          ],
-          fileCount: 25,
-          date: new Date(),
+          count1:new Date().toLocaleDateString(),
+          icon1:'mdi-calendar-month',
+          count2:10,
+          icon2:'mdi-chat-plus-outline', 
         },
         {
           id: 5,
@@ -193,39 +160,23 @@ export default new Vuex.Store({
                 "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
             },
             {
-              id: 1,
+              id: 2,
               name: "client name",
               cimage:
                 "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
             },
           ],
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
+          text: "Lorem ipsum dolor sit amet consectetur ...",
+          count:'1/2',
           listImage: [
-            "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
-            "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
+           "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
             "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
           ],
           like: 12,
-          commont: [
-            {
-              id: 1,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-            {
-              id: 2,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-            {
-              id: 3,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-            {
-              id: 4,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-          ],
-          fileCount: 25,
-          date: new Date(),
+          count1:new Date().toLocaleDateString(),
+          icon1:'mdi-calendar-month',
+          count2:10,
+          icon2:'mdi-chat-plus-outline', 
         },
         {
           id: 6,
@@ -237,39 +188,23 @@ export default new Vuex.Store({
                 "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
             },
             {
-              id: 1,
+              id: 2,
               name: "client name",
               cimage:
                 "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
             },
           ],
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
+          text: "Lorem ipsum dolor sit amet consectetur ...",
+          count:'1/2',
           listImage: [
-            "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
-            "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
+           "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
             "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
           ],
           like: 12,
-          commont: [
-            {
-              id: 1,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-            {
-              id: 2,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-            {
-              id: 3,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-            {
-              id: 4,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-          ],
-          fileCount: 25,
-          date: new Date(),
+          count1:new Date().toLocaleDateString(),
+          icon1:'mdi-calendar-month',
+          count2:10,
+          icon2:'mdi-chat-plus-outline', 
         },
         {
           id: 7,
@@ -281,39 +216,23 @@ export default new Vuex.Store({
                 "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
             },
             {
-              id: 1,
+              id: 2,
               name: "client name",
               cimage:
                 "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
             },
           ],
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
+          text: "Lorem ipsum dolor sit amet consectetur ...",
+          count:'1/2',
           listImage: [
-            "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
-            "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
+           "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
             "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
           ],
           like: 12,
-          commont: [
-            {
-              id: 1,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-            {
-              id: 2,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-            {
-              id: 3,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-            {
-              id: 4,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-          ],
-          fileCount: 25,
-          date: new Date(),
+          count1:new Date().toLocaleDateString(),
+          icon1:'mdi-calendar-month',
+          count2:10,
+          icon2:'mdi-chat-plus-outline', 
         },
         {
           id: 8,
@@ -325,49 +244,33 @@ export default new Vuex.Store({
                 "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
             },
             {
-              id: 1,
+              id: 2,
               name: "client name",
               cimage:
                 "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
             },
           ],
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
+          text: "Lorem ipsum dolor sit amet consectetur ...",
+          count:'1/2',
           listImage: [
-            "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
-            "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
+           "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
             "https://www.nicepng.com/png/detail/7-78595_asian-businessman-png-professional-man-images-png.png",
           ],
           like: 12,
-          commont: [
-            {
-              id: 1,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-            {
-              id: 2,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-            {
-              id: 3,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-            {
-              id: 4,
-              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officia...",
-            },
-          ],
-          fileCount: 25,
-          date: new Date(),
+          count1:new Date().toLocaleDateString(),
+          icon1:'mdi-calendar-month',
+          count2:10,
+          icon2:'mdi-chat-plus-outline', 
         },
       ],
-    }
+    };
   },
   getters: {
+    getFile(state){
+      return state.filecounts.length;
+    }
   },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
-})
+  mutations: {},
+  actions: {},
+  modules: {},
+});

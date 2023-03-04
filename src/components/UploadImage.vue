@@ -7,27 +7,19 @@
                     mdi-paperclip
                 </v-icon>
             </v-btn>
-            <span class="text-caption mt-2">12+</span>
+            <span class="text-caption mt-2">{{ getFile }}</span>
         </template>
         <v-card>
-            <v-card-title>Selectd file</v-card-title>
+            <v-card-title>Selected file</v-card-title>
             <v-card-text>
                 <form method="post">
-                    <input name="file" type="file" placeholder="enter file" style="border:1px solid black;padding:5px; width:250px;height:40px;border-radious:50px;" />
+                    <input name="file" type="file" placeholder="enter file" multiple style="border:1px solid black;padding:5px; width:250px;height:40px;border-radious:50px;" />
                     <v-btn @click="uploadFile" color="red" class="my-2">
                         upload
                     </v-btn>
                 </form>
             </v-card-text>
-            <v-divider></v-divider>
-            <v-card-actions>
-                <v-btn color="blue darken-1" text @click="dialog = false">
-                    Close
-                </v-btn>
-                <v-btn color="blue darken-1" text @click="dialog = false">
-                    Save
-                </v-btn>
-            </v-card-actions>
+        
         </v-card>
     </v-dialog>
 
@@ -35,6 +27,8 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
     name: 'upload-image',
     props: [],
@@ -43,6 +37,10 @@ export default {
             dialog: false,
         }
     },
+    computed:{
+        ...mapGetters(['getFile'])
+    },
+    
     methods: {
         onClick() {
             console.log('click ')

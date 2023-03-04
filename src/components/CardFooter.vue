@@ -2,16 +2,15 @@
 <div class="card-footer">
     <v-list class="pa-0 d-flex justify-space-around">
         <v-list-item class="pa-0 d-flex justify-space-around">
-            <CardImages />
-            <CardImages />
+            <CardImages :images="images" />
         </v-list-item>
         <v-list-item>
             <v-avatar color="#808081" size="26" class="text-caption">
-                12+
+                {{likes}}+
             </v-avatar>
-            <CardFooterTag />
+            <CardFooterTag :icon="card.icon2" :count="card.count2"/>
             <UploadImage />
-            <CardFooterTag />
+            <CardFooterTag :icon="card.icon1" :count="card.count1"/>
         </v-list-item>
     </v-list>
 </div>
@@ -24,7 +23,7 @@ import UploadImage from './UploadImage.vue';
 
 export default {
     name: 'card-footer',
-    props: [],
+    props: ['images', 'likes', 'comments', 'card'],
 
     components: {
         CardFooterTag,

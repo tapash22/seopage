@@ -1,14 +1,14 @@
 <template>
 <div class="card-actions">
-    <v-icon>mdi-facebook</v-icon>
-    <v-list-item-title class="text-body-2 pa-2">1/2</v-list-item-title>
+    <v-icon size="20">mdi-card-bulleted-outline</v-icon>
+    <v-list-item-title class="text-body-2 pa-2">{{ count }}</v-list-item-title>
 </div>
 </template>
 
 <script>
 export default {
     name:'card-actions',
-    props:[]
+    props:["count"]
 }
 </script>
 
