@@ -1,7 +1,7 @@
 <template>
 <div class="home">
     <v-container>
-        <v-row class="d-flex">
+        <v-row class="d-flex d-block-sm-and-down">
             <v-col cols="12" sm="12" md="3" lg="3" xl="3" class="item">
                 <HeaderBox :name="groupHeader1.name" :color="groupHeader1.color" :count="groupHeader1.count" />
                 <SingleCard v-for="card in cards" :key="card.id" :card="card"/>
@@ -57,6 +57,7 @@ export default {
 .item {
     background: rgba(209, 199, 199, 0.199);
     height: 100vh;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden ;
 }
 </style>
